@@ -43,18 +43,18 @@
         <h2 class="readme-header">1. Let's set up</h2>
         <ol>
           <li>Start Atom. It will open a new black window.</li>
-          <li>Create a <strong>folder</strong> <code>landing</code> on your Desktop. Drag & drop this folder in the Atom window.</li>
+          <li>Create a <strong>folder</strong> named <code>landing</code> on your Desktop. Drag & drop this folder in the Atom window.</li>
           <li>
             In Atom left navigation:
             <ul>
               <li>Right click on the folder and choose <strong>"New file"</strong></li>
               <li>Save it as <code>index.html</code> with <strong>Cmd + S</strong> or <strong>Ctrl + S</strong></li>
               <li>Do the same to create a <code>style.css</code> file</li>
-              <li>Then right click again on the main folder and choose <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
+              <li>Then right click again on the folder again and choose <strong>"New Folder"</strong> and create an <code>images</code> folder</li>
             </ul>
             </ul>
           </li>
-          <li>Finally double click on <code>index.html</code> in the finder of your computer to open it with Chrome</li>
+          <li>Finally go on your Desktop, open the folder <code>landing</code> and double click on <code>index.html</code> to open it with Chrome</li>
         </ol>
 
         <img src='source/images/setup.png' width="100%"/>
@@ -82,6 +82,9 @@
   <span class="nt">&lt;body&gt;</span>
     <span class="nt">&lt;h1&gt;</span>My playground app<span class="nt">&lt;/h1&gt;</span>
     <span class="nt">&lt;p&gt;</span>This is the important line everyone reads..<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;</span>
+      <span class="na">href=</span><span class="s">"#"</span>Start now<span class="nt">&lt;/a&gt;</span>
+    <span class="nt">&lt;/p&gt;</span>
 
     <span class="nt">&lt;h2&gt;</span>Fast<span class="nt">&lt;/h2&gt;</span>
     <span class="nt">&lt;p&gt;</span>A fast app, <span class="nt">&lt;strong&gt;</span>very fast<span class="nt">&lt;/strong&gt;</span> app<span class="nt">&lt;/p&gt;</span>
@@ -113,7 +116,7 @@
       <section class="readme-section">
         <h2 class="readme-header">3. CSS for fonts & colors</h2>
         <p>Link your stylesheet <code>style.css</code> in the <code>head</code> section of your HTML</p>
-        <p>(Copy paste only the line with <link...  in the <head> section of the index.html file)</p>
+        <p>(Copy paste only the line with <code>link...</code>  in the <code>head</code> section of the index.html file)</p>
 
 
 <pre class="highlight html"><code><span class="nt">&lt;head&gt;</span>
@@ -162,6 +165,9 @@
 <pre class="highlight html"><code><span class="nt">&lt;div&gt;</span>
   <span class="nt">&lt;h1&gt;</span>My playground app<span class="nt">&lt;/h1&gt;</span>
   <span class="nt">&lt;p&gt;</span>This is the important line everyone reads..<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p&gt;</span>
+    <span class="na">href=</span><span class="s">"#"</span>Start now<span class="nt">&lt;/a&gt;</span>
+  <span class="nt">&lt;/p&gt;</span>
 <span class="nt">&lt;/div&gt;</span>
 
 <span class="nt">&lt;div&gt;</span>
@@ -221,6 +227,10 @@
   <span class="nl">color</span><span class="p">:</span> <span class="no">lightgrey</span><span class="p">;</span>
 <span class="p">}</span>
 </code></pre>
+      
+        <p>Or use this css if you prefer and change whatever you want, change the backgound photo by finding in Pexels</p>
+        <img src='source/images/othercss.png' width="100%"/>
+        
       </section>
       <section class="readme-section">
         <h2 class="readme-header">6. Fontawesome</h2>
@@ -250,35 +260,22 @@
       </section>
       <section class="readme-section">
         <h2 class="readme-header">7. Bootstrap setup</h2>
-        <ol>
-          <li>Create a new <code>index.html</code> file with the Bootstrap template below</li>
-          <li>Inject your content in the <code>body</code></li>
-          <li>Play with <code>class="btn btn-primary"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
-        </ol>
-<pre class="highlight html"><code><span class="cp">&lt;!DOCTYPE html&gt;</span>
-<span class="nt">&lt;html&gt;</span>
-  <span class="nt">&lt;head&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"utf-8"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"X-UA-Compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;meta</span> <span class="na">name=</span><span class="s">"viewport"</span> <span class="na">content=</span><span class="s">"width=device-width, initial-scale=1"</span><span class="nt">&gt;</span>
-
-    <span class="nt">&lt;title&gt;</span>My landing Page<span class="nt">&lt;/title&gt;</span>
-
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">href=</span><span class="s">"style.css"</span><span class="nt">&gt;</span>
-
-  <span class="nt">&lt;/head&gt;</span>
-  <span class="nt">&lt;body&gt;</span>
-
-    <span class="c">&lt;!-- TODO: insert your page content here --&gt;</span>
-
-    <span class="c">&lt;!-- jQuery &amp; Bootstrap javascript files --&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-    <span class="nt">&lt;script </span><span class="na">src=</span><span class="s">"https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"</span><span class="nt">&gt;&lt;/script&gt;</span>
-  <span class="nt">&lt;/body&gt;</span>
-<span class="nt">&lt;/html&gt;</span>
-</code></pre>
+        <ul>
+          <li>To setup Bootstrap in your project, copy paste this line in the <code> head</code> section of <code>index.html</code> :</li>
+          <pre class="highlight html"><code>
+            <span class="nt">&lt;link</span> <span class="na">crossorigin=</span><span class="s">'anonymous'</span> <span class="na">integrity=</span><span class="s">'sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm'</span> <span class="na">href=</span><span class="s">'https://code.jquery.com/jquery-3.2.1.slim.min.js'</span> <span class="na">rel=</span><span class="s">'stylesheet'</span><span class="nt">&gt;</span>
+          </code></pre>        
+         
+          <li>Just before the closing tag <span class="nt">&lt;body</span>, copy paste these lines :</l
+          <pre class="highlight html"><code>
+            <span class="nt">&lt;script</span> <span class="na">crossorigin=</span><span class="s">'anonymous'</span> <span class="na">integrity=</span><span class="s">'sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN'</span> <span class="na">src=</span><span class="s">'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css'</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;script</span> <span class="na">crossorigin=</span><span class="s">'anonymous'</span> <span class="na">integrity=</span><span class="s">'sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4'</span> <span class="na">src=</span><span class="s">'https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js'</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;script</span> <span class="na">crossorigin=</span><span class="s">'anonymous'</span> <span class="na">integrity=</span><span class="s">'sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl'</span> <span class="na">src=</span><span class="s">'https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js'</span><span class="nt">&gt;</span>
+          </code></pre>  
+          <li>Then play with <code>class="btn btn-primary btn-lg"</code> <code>class="text-center"</code> and <code>class="list-inline"</code>, your first Bootstrap classes</li>
+        </ul>
+  
+        
       </section>
       <section class="readme-section">
         <h2 class="readme-header">8. Bootstrap grid</h2>
@@ -287,16 +284,16 @@
         </ul>
 <pre class="highlight html"><code><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"container"</span><span class="nt">&gt;</span>
   <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"row"</span><span class="nt">&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- div class="card" --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- div class="card" --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- div class="card" --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
-    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-xs-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"col-12 col-sm-6 col-md-3"</span><span class="nt">&gt;</span>
       <span class="c">&lt;!-- div class="card" --&gt;</span>
     <span class="nt">&lt;/div&gt;</span>
   <span class="nt">&lt;/div&gt;</span>
