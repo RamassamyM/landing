@@ -10272,6 +10272,10 @@ body {
   color: #4C4C4C; }
 
 
-.readme li {
+.readme li, .readme, body {
     font-size: 15px;
+}
+
+pre {
+  font-size: 13px;
 }
